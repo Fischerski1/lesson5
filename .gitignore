@@ -1,0 +1,35 @@
+/target/
+/logs/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Sensitive parts of configuration
+src/main/resources/*.yml
+!src/main/resources/application.yml.example
+!src/main/resources/application-profile.yml.example
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### VS Code ###
+.vscode/
+# Project exclude paths
+/out/
