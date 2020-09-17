@@ -1,6 +1,8 @@
+import java.util.Map;
+
 public class Entry<K, V> {
     K key;
-    V val;
+    V value;
 
     public K getKey() {
         return key;
@@ -10,12 +12,12 @@ public class Entry<K, V> {
         this.key = key;
     }
 
-    public V getVal() {
-        return val;
+    public V getValue() {
+        return value;
     }
 
-    public void setVal(V val) {
-        this.val = val;
+    public void setValue(V value) {
+        this.value = value;
     }
 
     @Override
