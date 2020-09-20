@@ -1,6 +1,6 @@
 import java.util.Map;
 
-public class Entry<K, V> {
+public class Entry<K, V> implements Map.Entry<K, V> {
     K key;
     V value;
 
@@ -16,8 +16,9 @@ public class Entry<K, V> {
         return value;
     }
 
-    public void setValue(V value) {
+    public V setValue(V value) {
         this.value = value;
+        return value;
     }
 
     @Override
